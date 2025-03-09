@@ -23,6 +23,9 @@ import utils
 
 # （自作）アプリ起動時に実行される初期化処理が記述された関数
 from initialize import initialize
+import os
+
+os.environ["OPENAI_API_KEY"] = st.secrets["openai"]["OPENAI_API_KEY"]
 
 ############################################################
 # 2. 設定関連
